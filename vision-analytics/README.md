@@ -4,7 +4,6 @@ This project demonstrates a powerful, interactive application to analyse images,
 
 Users can analyse an image, video clip, or connect a live rtsp stream with a  deployed VLM with a custom prompt to extract structured information.
 
-
 ---
 
 ### Context on Customer and Use Case
@@ -35,5 +34,11 @@ This demo is ideal for customers looking to analyse images, video, or live strea
 
 This application requires a Vision Language Model to be deployed and running within the HPE Machine Learning Inference Software Tool.
 
-*   **Model:** `Qwen/Qwen2.5-VL-32B-Instruct-AWQ`
-*   **Details:** [Hugging Face Model Card](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct-AWQ)
+```yaml
+required_models:
+  - number: 1
+    role: large_language_model
+    name: Qwen/Qwen2.5-VL-32B-Instruct-AWQ
+    source:
+      provider: Hugging Face
+      url: https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct-AWQ
