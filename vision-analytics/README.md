@@ -13,8 +13,8 @@ This demo is ideal for customers looking to analyse images, video, or live strea
 
 ### Solution Overview and Demo Video
 
-[Solution Overview]
-[Demo Video]
+- [Solution Overview]
+- [Demo Video]
 
 ---
 
