@@ -1,5 +1,48 @@
 [
   {
+    "catalog_id": "seed-l40s-qwen2.5-vl-32b-instruct-awq",
+    "tier": "h200",
+    "name": "qwen2.5-vl-32b-instruct-awq",
+    "version": 1,
+    "description": "Qwen2.5-VL-32B-Instruct-AWQ with VLLM",
+    "uri": "pvc://models-dir/models?containerPath=/mnt/models",
+    "image": "vllm/vllm-openai:latest",
+    "model_format": "custom",
+    "arguments": [
+      "Qwen/Qwen2.5-VL-32B-Instruct-AWQ",
+      "--port",
+	    "8080",
+	    "--quantization awq_marlin",
+	    "--dtype",
+	    "float16",
+	    "--max-model-len",
+	    "8192",
+	    "--max-num-seqs",
+	    "1"      
+    ],
+    "environment": {
+      "HF_HUB_OFFLINE": "1",
+      "HUGGINGFACE_HUB_CACHE": "/mnt/models",
+      "TRANSFORMERS_OFFLINE": "1",
+      "AIOLI_DISABLE_LOGGER": "1",
+      "AIOLI_PROGRESS_DEADLINE": "90000s"
+    },
+    "resource_request_cpu": "8",
+    "resource_request_memory": "40Gi",
+    "resource_request_gpu": "1",
+    "resource_limit_cpu": "10",
+    "resource_limit_memory": "50Gi",
+    "resource_limit_gpu": "1",
+    "resource_gpu_type": "",
+    "caching_enabled": true,
+    "project": "",
+    "metadata": {
+      "tags": "",
+      "modelCategory": "llm"
+    },
+    "registry": null
+  },  
+  {
     "catalog_id": "seed-h200-deepseek",
     "tier": "h200",
     "name": "deepseek-v4-flash-0731",
