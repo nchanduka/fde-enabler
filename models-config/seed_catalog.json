@@ -1,7 +1,7 @@
 [
   {
     "catalog_id": "seed-l40s-qwen2.5-vl-32b-instruct-awq",
-    "tier": "h200",
+    "tier": "l40s",
     "name": "qwen2.5-vl-32b-instruct-awq",
     "version": 1,
     "description": "Qwen2.5-VL-32B-Instruct-AWQ with VLLM",
