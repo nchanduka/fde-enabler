@@ -11,14 +11,14 @@
     "arguments": [
       "Qwen/Qwen2.5-VL-32B-Instruct-AWQ",
       "--port",
-	    "8080",
-	    "--quantization awq_marlin",
-	    "--dtype",
-	    "float16",
-	    "--max-model-len",
-	    "8192",
-	    "--max-num-seqs",
-	    "1"      
+	  "8080",
+	  "--quantization awq_marlin",
+	  "--dtype",
+	  "float16",
+	  "--max-model-len",
+	  "8192",
+	  "--max-num-seqs",
+	  "1"      
     ],
     "environment": {
       "HF_HUB_OFFLINE": "1",
@@ -41,7 +41,7 @@
       "modelCategory": "llm"
     },
     "registry": null
-  },  
+  },
   {
     "catalog_id": "seed-h200-deepseek",
     "tier": "h200",
